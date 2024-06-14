@@ -1,14 +1,15 @@
 "use client"
 
-import DefaultBtn from "../../common/Button/DefaultBtn";
-import Logo from "../../common/Logo/logo";
+import DefaultBtn from "@/app/components/common/Button/DefaultBtn";
+import Logo from "@/app/components/common/Logo/logo";
+
 
 const DefaultNav = () => {
     return (
         <>
             <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center py-3">
-                    <Logo />
+                    <Logo/>
                     <DefaultBtn text={"Get Started"} />
                 </div>
             </div>
