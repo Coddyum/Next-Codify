@@ -1,3 +1,5 @@
+"use client"
+
 import DefaultBtn from "../../common/Button/DefaultBtn";
 import Logo from "../../common/Logo/logo";
 
