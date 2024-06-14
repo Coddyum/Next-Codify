@@ -1,13 +1,35 @@
-"use client"
+"use client";
+
+import Cursor from "@/app/hooks/cursor";
+import "@/app/components/layout/home/Main/MainBento.css"
 
 export default function Main() {
     return (
         <>
-            <div className="w-screen h-full bg-emerald-700">
-                <div className="max-w-screen-xl mx-auto bg-red-500">
-                    <h2 className="text-white text-lg font-medium text-center p-4">
-                        PRICING
-                    </h2>
+            <Cursor />
+            <div className="w-screen h-full ">
+                <div className="max-w-screen-xl mx-auto flex gap-5 flex-wrap container mb-10">
+                    <div className="flex flex-col gap-5 ml-5">
+                        <div className="flex gap-5">
+                            <div
+                                className="card w-300 h-300 bg-transparent border-2 border-or-300 rounded-3xl"
+                                style={{ "--clr": "#ecb99d" }}></div>
+                            <div
+                                className="card2 card w-600 h-300 bg-transparent border-2 border-or-300 rounded-3xl"
+                                style={{ "--clr": "#ecb99d" }}></div>
+                        </div>
+                        <div className="flex gap-5">
+                            <div
+                                className="card2 card w-600 h-300 bg-transparent border-2 border-or-300 rounded-3xl"
+                                style={{ "--clr": "#ecb99d" }}></div>
+                            <div
+                                className="card w-300 h-300 bg-transparent border-2 border-or-300 rounded-3xl"
+                                style={{ "--clr": "#ecb99d" }}></div>
+                        </div>
+                    </div>
+                    <div
+                        className="card3 card w-300 h-616 bg-transparent border-2 border-or-300 rounded-3xl"
+                        style={{ "--clr": "#ecb99d" }}></div>
                 </div>
             </div>
         </>

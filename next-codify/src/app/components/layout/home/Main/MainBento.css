@@ -1,0 +1,63 @@
+
+.w-300 {
+    width: 300px;
+}
+
+.w-600 {
+    width: 600px;
+}
+
+.h-300 {
+    height: 300px;
+}
+
+.h-616 {
+    height: 616px;
+}
+
+
+
+.container .card {
+    position: relative;
+    overflow: hidden;
+}
+
+.container .card::before {
+    content: "";
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    background: radial-gradient(var(--clr), transparent, transparent);
+    width: 190%;
+    height: 190%;
+    opacity: 0;
+    transition: opacity 120ms ease-in-out;
+}
+
+.container .card2::before {
+    width: 110%;
+    height: 210%;
+}
+
+.container .card3::before {
+    width: 200%;
+    height: 100%;
+}
+
+.container .card:hover::before {
+    opacity: 0.6;
+}
+
+.container .card2:hover::before {
+    opacity: 0.7;
+}
+.container .card3:hover::before {
+    opacity: 0.7;
+}
+
+.container .card::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+}

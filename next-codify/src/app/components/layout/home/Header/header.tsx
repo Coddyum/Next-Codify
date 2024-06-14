@@ -7,7 +7,7 @@ import DefaultBtn from "@/app/components/common/Button/DefaultBtn";
 const Header = () => {
     return (
         <>
-            <div className="w-screen h-full pb-32 bg-gradient-to-br to-or-300 via-transparent from-transparent">
+            <div className="w-screen h-full pb-28 bg-gradient-to-br to-or-300 via-transparent from-transparent">
                 <div className="max-w-screen-xl mx-auto bg-transparent ">
                     <div className="text-center max-w-screen-lg mx-auto pt-36">
                         <h1 className="text-7xl text-white leading-snug tracking-tight">
@@ -21,7 +21,7 @@ const Header = () => {
                             interactive and effective methods.
                         </p>
                     </div>
-                    <div className="pt-14 flex items-center justify-center font-bold">
+                    <div className="pt-16 flex items-center justify-center font-bold">
                         <DefaultBtn text={"Get Started"} />
                     </div>
                 </div>
@@ -31,7 +31,7 @@ const Header = () => {
 
             <div className="w-screen h-full pb-36 bg-gradient-to-tr to-or-300 via-transparent from-transparent">
                 <div className="bg-transparent">
-                    <Image src={RoadMapPage} alt="Logo" width={1280} className="mx-auto pt-10 z-30"/>
+                    <Image src={RoadMapPage} alt="Logo" width={1280} className="mx-auto  z-30"/>
                 </div>
             </div>
         </>
