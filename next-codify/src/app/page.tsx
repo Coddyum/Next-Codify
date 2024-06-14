@@ -1,3 +1,14 @@
-export default function Home(){
-  return <h1>Hello Home</h1>
+"use client"
+
+import DefaultNav from "./components/layout/NavBar/DefaultNav";
+import "./globals.css"
+
+export default function LandingPage(){
+  return (
+    <>
+      <nav>
+        <DefaultNav/>
+      </nav>
+    </>
+  )
 }
