@@ -12,7 +12,7 @@ const Cursor = () => {
                 card.style.setProperty('--y', y + 'px');
             };
         });
-    }, []); 
+    }, []);
 };
 
 export default Cursor;
