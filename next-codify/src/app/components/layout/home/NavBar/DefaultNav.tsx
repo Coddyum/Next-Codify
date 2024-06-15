@@ -1,16 +1,21 @@
-"use client"
+"use client";
 
 import DefaultBtn from "@/app/components/common/Button/DefaultBtn";
 import Logo from "@/app/components/common/Logo/logo";
+import Link from "next/link";
 
-
-const DefaultNav = () => {
+const LoginNav = () => {
     return (
         <>
             <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center py-3">
-                    <Logo/>
-                    <DefaultBtn text={"Get Started"} />
+                    <Link href="/">
+                        <Logo />
+                    </Link>
+
+                    <Link href="/Pages/SignUp">
+                        <DefaultBtn text={"Get Started"} />
+                    </Link>
                 </div>
             </div>
             <hr className="border-or-300" />
@@ -18,4 +23,4 @@ const DefaultNav = () => {
     );
 };
 
-export default DefaultNav;
+export default LoginNav;

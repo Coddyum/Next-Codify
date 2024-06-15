@@ -7,9 +7,9 @@ export default function Main() {
     return (
         <>
             <Cursor />
-            <div className="w-screen h-full">
+            <div className="w-screen h-auto">
                 <div
-                    className="max-w-screen-xl mx-auto flex gap-5 flex-wrap container mb-10"
+                    className="max-w-screen-xl mx-auto flex gap-5 flex-wrap container mb-24"
                     style={{ "--clr": "#ecb99d" } as React.CSSProperties}>
                     <div className="flex flex-col gap-5 ml-5">
                         <div className="flex gap-5">
