@@ -8,8 +8,8 @@ const Cursor = () => {
                 const x: number = e.pageX - card.offsetLeft;
                 const y: number = e.pageY - card.offsetTop;
 
-                card.style.setProperty('--x', x + 'px' );
-                card.style.setProperty('--y', y + 'px' );
+                card.style.setProperty('--x', x + 'px');
+                card.style.setProperty('--y', y + 'px');
             };
         });
     }, []); 
