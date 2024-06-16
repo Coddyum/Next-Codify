@@ -7,7 +7,7 @@ const LoginNav = () => {
     return (
         <>
             <div className="w-screen flex items-center justify-center mx-auto">
-                <div className="flex justify-between items-center py-4">
+                <div className="flex justify-between items-center py-4 mr-2">
                     <Link href="/">
                         <Logo />
                     </Link>
