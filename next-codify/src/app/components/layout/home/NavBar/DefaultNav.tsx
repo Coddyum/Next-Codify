@@ -4,7 +4,7 @@ import DefaultBtn from "@/app/components/common/Button/DefaultBtn";
 import Logo from "@/app/components/common/Logo/logo";
 import Link from "next/link";
 
-const LoginNav = () => {
+const DefaultNav = () => {
     return (
         <>
             <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,7 +13,7 @@ const LoginNav = () => {
                         <Logo />
                     </Link>
 
-                    <Link href="/Pages/SignUp">
+                    <Link href="/pages/signup">
                         <DefaultBtn text={"Get Started"} />
                     </Link>
                 </div>
@@ -23,4 +23,4 @@ const LoginNav = () => {
     );
 };
 
-export default LoginNav;
+export default DefaultNav;
