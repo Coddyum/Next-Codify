@@ -29,20 +29,20 @@
     left: var(--x);
     transform: translate(-50%, -50%);
     background: radial-gradient(var(--clr), transparent, transparent);
-    width: 190%;
-    height: 190%;
+    width: 250%;
+    height: 250%;
     opacity: 0;
     transition: opacity 10ms ease;
 }
 
 .container .card2::before {
-    width: 110%;
-    height: 210%;
+    width: 150%;
+    height: 250%;
 }
 
 .container .card3::before {
-    width: 200%;
-    height: 100%;
+    width: 250%;
+    height: 150%;
 }
 
 .container .card:hover::before {
