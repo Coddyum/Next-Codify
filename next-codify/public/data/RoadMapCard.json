@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Front-End",
+    "by": "Nabster",
+    "image": "/IMG/card-roadmap.png",
+    "isFavorite": false
+  },
+  {
+    "id": 2,
+    "title": "Back-End",
+    "by": "Nab",
+    "image": "/IMG/card-roadmap.png",
+    "isFavorite": false
+  },
+  {
+    "id": 3,
+    "title": "Front-End",
+    "by": "Nabster",
+    "image": "/IMG/card-roadmap.png",
+    "isFavorite": false
+  },
+  {
+    "id": 4,
+    "title": "Back-End",
+    "by": "Nab",
+    "image": "/IMG/card-roadmap.png",
+    "isFavorite": false
+  }
+]
