@@ -8,16 +8,44 @@ import useClientRouter from "../../../hooks/useClientRouter";
 export default function SignUp() {
     const router = useClientRouter();
 
-    const handleSubmit = (event) => {
+    const validateEmail = (email: string): boolean => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    };
+
+    const validatePassword = (password: string): boolean => {
+        const passwordRegex =
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+        return passwordRegex.test(password);
+    };
+
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        const form = event.target;
-        const email = form.Email.value;
-        const pseudo = form.Pseudo.value;
-        const password = form.pwd.value;
-        const confirmPassword = form.confirmPwd.value;
+        const form = event.target as HTMLFormElement;
+        const email = (form.elements.namedItem("Email") as HTMLInputElement)
+            .value;
+        const pseudo = (form.elements.namedItem("Pseudo") as HTMLInputElement)
+            .value;
+        const password = (form.elements.namedItem("pwd") as HTMLInputElement)
+            .value;
+        const confirmPassword = (
+            form.elements.namedItem("confirmPwd") as HTMLInputElement
+        ).value;
 
         if (!email || !pseudo || !password || !confirmPassword) {
             alert("Tous les champs doivent être remplis.");
+            return;
+        }
+
+        if (!validateEmail(email)) {
+            alert("Veuillez entrer une adresse email valide.");
+            return;
+        }
+
+        if (!validatePassword(password)) {
+            alert(
+                "Le mot de passe doit contenir au moins 8 caractères, dont une majuscule, une minuscule, un chiffre et un caractère spécial."
+            );
             return;
         }
 
@@ -27,7 +55,7 @@ export default function SignUp() {
         }
 
         if (router) {
-            router.push('./RoadMapSelect');
+            router.push("./RoadMapSelect");
         }
     };
 
@@ -87,8 +115,7 @@ export default function SignUp() {
                                 <div className="flex items-center justify-center my-8 gap-3">
                                     <button
                                         type="submit"
-                                        className="w-auto h-auto p-2 ml-2 flex items-center justify-center border-2 border-or-300 rounded-lg text-white font-medium text-sm transition duration-500 ease-out hover:bg-or-300 hover:text-slate-950"
-                                    >
+                                        className="w-auto h-auto p-2 ml-2 flex items-center justify-center border-2 border-or-300 rounded-lg text-white font-medium text-sm transition duration-500 ease-out hover:bg-or-300 hover:text-slate-950">
                                         Sign Up
                                     </button>
                                     <Link href="./SignIn">
