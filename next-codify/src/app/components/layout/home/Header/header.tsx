@@ -10,11 +10,11 @@ const Header = () => {
             <div className="w-screen h-full pb-28 bg-gradient-to-br to-or-300 via-transparent from-transparent">
                 <div className="max-w-screen-xl mx-auto bg-transparent ">
                     <div className="text-center max-w-screen-lg mx-auto pt-36">
-                        <h1 className="text-7xl text-white leading-snug tracking-tight">
+                        <h1 className="text-7xl text-white leading-snug tracking-tight animate-fade-left animate-duration-1000 animate-delay-200 animate-ease-in">
                             <span className="text-or-300">Cod</span>
                             ify your learning like never before
                         </h1>
-                        <p className="text-white font-medium mt-4">
+                        <p className="text-white font-medium mt-4 animate-fade-right animate-duration-1000 animate-delay-200 animate-ease-in">
                             Access an innovative learning platform that enhances
                             your understanding and helps you master complex
                             concepts. Transform the way you learn with

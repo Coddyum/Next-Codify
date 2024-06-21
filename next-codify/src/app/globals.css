@@ -8,8 +8,14 @@
     box-sizing: border-box;
     font-family: 'JetBrains mono';
 }
+
+*::selection {
+    background-color: #f1cdb7;
+    color: #080e1d;
+}
+
 body {
-    background-color: #050913;
+    background-color: #080e1d;
 }
 
 body::-webkit-scrollbar {
