@@ -12,7 +12,6 @@ const DefaultNav = () => {
                     <Link href="/">
                         <Logo />
                     </Link>
-
                     <Link href="/pages/signup">
                         <DefaultBtn text={"Get Started"} />
                     </Link>

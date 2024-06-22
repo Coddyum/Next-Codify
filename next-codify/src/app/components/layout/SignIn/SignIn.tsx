@@ -28,7 +28,7 @@ export default function SignIn() {
         }
 
         if (router) {
-            router.push('./RoadMapSelect');
+            router.push('./roadmapselect');
         }
     };
 

@@ -3,7 +3,7 @@
 import React from "react";
 
 interface DefaultBtnProps {
-    text: string; // Définissez le type de la prop text comme une chaîne de caractères
+    text: string;
 }
 
 const DefaultBtn: React.FC<DefaultBtnProps> = ({ text }) => {

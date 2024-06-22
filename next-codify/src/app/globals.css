@@ -11,11 +11,11 @@
 
 *::selection {
     background-color: #f1cdb7;
-    color: #080e1d;
+    color: rgb(36, 36, 36);
 }
 
 body {
-    background-color: #080e1d;
+    background-color: #0a0a1a;
 }
 
 body::-webkit-scrollbar {

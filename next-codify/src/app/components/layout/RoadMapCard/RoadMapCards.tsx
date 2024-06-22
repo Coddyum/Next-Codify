@@ -1,4 +1,5 @@
 import CardData from "../../../../../public/data/RoadMapCard.json";
+import EnRollBtn from "../../common/Button/EnRollBtn";
 
 export default function RoadMapCards() {
     return (
@@ -17,6 +18,7 @@ export default function RoadMapCards() {
                         <div className="w-64 mx-auto mt-3 bg-green-600">
                             <h2 className="text-white font-medium">{data.title}</h2>
                         </div>
+                        <EnRollBtn/>
                     </div>
                 ))}
             </div>
