@@ -1,8 +1,15 @@
+import { useState } from "react";
+
 import CardData from "../../../../../public/data/RoadMapCard.json";
 import EnRollBtn from "../../common/Button/EnRollBtn";
-import { HeartIcon } from '@heroicons/react/24/outline'
+import { HeartIcon as HeartOutlineIcon } from "@heroicons/react/24/outline";
+import { HeartIcon as HeartSolidIcon } from "@heroicons/react/24/solid";
 
 export default function RoadMapCards() {
+    const [favorites, setFavorites] = useState(() => {
+        
+    });
+
     return (
         <>
             <div className="max-w-screen-xl flex items-center justify-center gap-8 mt-24">
@@ -20,12 +27,14 @@ export default function RoadMapCards() {
                             <h2 className="text-white font-medium">
                                 {data.title}
                             </h2>
-                            <HeartIcon className="size-6 text-or-300 ml-auto"/>
+                            <HeartOutlineIcon className="size-6 text-or-300 ml-auto" />
                         </div>
                         <div className="w-64 mx-auto ">
                             <h2 className="text-or-300 font-medium mt-10">
                                 By:{" "}
-                                <span className="text-white text-lg">{data.by}</span>
+                                <span className="text-white text-lg">
+                                    {data.by}
+                                </span>
                             </h2>
                         </div>
                         <div className="my-3">

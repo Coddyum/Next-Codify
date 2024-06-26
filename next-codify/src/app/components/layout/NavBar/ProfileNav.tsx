@@ -22,7 +22,6 @@ const ProfileNav = () => {
                 </div>
                 {profilImages}
             </nav>
-            <hr className="border-or-300" />
         </>
     );
 };
