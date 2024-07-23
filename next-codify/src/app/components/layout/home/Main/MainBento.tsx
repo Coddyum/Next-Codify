@@ -7,7 +7,7 @@ export default function Main() {
     return (
         <>
             <Cursor />
-            <div className="w-screen h-full pb-36 bg-gradient-to-tr to-or-300 via-transparent from-transparent">
+            <div className="w-screen h-full py-36">
                 <div
                     className="max-w-screen-xl mx-auto flex gap-5 flex-wrap container mb-24"
                     style={{ "--clr": "#ecb99d" } as React.CSSProperties}>

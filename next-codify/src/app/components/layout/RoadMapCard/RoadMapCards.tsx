@@ -1,14 +1,21 @@
 import { useState } from "react";
-
 import CardData from "../../../../../public/data/RoadMapCard.json";
 import EnRollBtn from "../../common/Button/EnRollBtn";
 import { HeartIcon as HeartOutlineIcon } from "@heroicons/react/24/outline";
 import { HeartIcon as HeartSolidIcon } from "@heroicons/react/24/solid";
 
 export default function RoadMapCards() {
-    const [favorites, setFavorites] = useState(() => {
-        
-    });
+    const [favorites, setFavorites] = useState([]);
+
+    const handleFavoriteToggle = (id) => {
+        setFavorites((prevFavorites) => {
+            if (prevFavorites.includes(id)) {
+                return prevFavorites.filter(favoriteId => favoriteId !== id);
+            } else {
+                return [...prevFavorites, id];
+            }
+        });
+    };
 
     return (
         <>
@@ -23,13 +30,25 @@ export default function RoadMapCards() {
                             alt=""
                             className="w-64 h-40 object-cover mx-auto mt-4 rounded-xl"
                         />
-                        <div className="w-64  mt-3 text-lg flex items-center mx-auto">
+                        <div className="w-64 mt-3 text-lg flex items-center mx-auto">
                             <h2 className="text-white font-medium">
                                 {data.title}
                             </h2>
-                            <HeartOutlineIcon className="size-6 text-or-300 ml-auto" />
+                            <div className="ml-auto">
+                                {favorites.includes(data.id) ? (
+                                    <HeartSolidIcon
+                                        className="size-6 text-or-300"
+                                        onClick={() => handleFavoriteToggle(data.id)}
+                                    />
+                                ) : (
+                                    <HeartOutlineIcon
+                                        className="size-6 text-or-300"
+                                        onClick={() => handleFavoriteToggle(data.id)}
+                                    />
+                                )}
+                            </div>
                         </div>
-                        <div className="w-64 mx-auto ">
+                        <div className="w-64 mx-auto">
                             <h2 className="text-or-300 font-medium mt-10">
                                 By:{" "}
                                 <span className="text-white text-lg">

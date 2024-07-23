@@ -29,11 +29,11 @@ const Header = () => {
 
             {/* preview of the roadmap selection */}
 
-            {/* <div className="w-screen h-full pb-36 bg-gradient-to-tr to-or-300 via-transparent from-transparent">
+            <div className="w-screen h-full pb-36 bg-gradient-to-tr to-or-300 via-transparent from-transparent">
                 <div className="bg-transparent">
                     <Image src={RoadMapPage} alt="Logo" width={1280} className="mx-auto  z-30 animate-fade-up animate-duration-1000 animate-delay-700 animate-ease-in-out"/>
                 </div>
-            </div> */}
+            </div>
         </>
     );
 };
