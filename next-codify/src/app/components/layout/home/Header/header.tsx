@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import RoadMapPage from "../../../../../../public/SVG/roadmap-pages.svg";
 import DefaultBtn from "@/app/components/common/Button/DefaultBtn";
 
@@ -22,13 +23,20 @@ const Header = () => {
                         </p>
                     </div>
                     <div className="pt-16 flex items-center justify-center font-bold animate-fade duration-1000 delay-700 ease-in-out">
-                        <DefaultBtn text={"Get Started"} />
+                        <Link href="/pages/signup">
+                            <DefaultBtn text={"Get Started"} />
+                        </Link>
                     </div>
                 </div>
             </div>
-        
+
             <div className="w-screen h-full pb-36 bg-gradient-to-tr from-transparent via-transparent to-or-300">
-                <Image src={RoadMapPage} alt="Logo" width={1280} className="mx-auto z-30 animate-fade-up duration-1000 delay-700 ease-in-out"/>
+                <Image
+                    src={RoadMapPage}
+                    alt="Logo"
+                    width={1280}
+                    className="mx-auto z-30 animate-fade-up duration-1000 delay-700 ease-in-out"
+                />
             </div>
         </>
     );

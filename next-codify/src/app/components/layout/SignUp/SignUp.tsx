@@ -22,10 +22,15 @@ export default function SignUp() {
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         const form = event.target as HTMLFormElement;
-        const email = (form.elements.namedItem("Email") as HTMLInputElement).value;
-        const pseudo = (form.elements.namedItem("Pseudo") as HTMLInputElement).value;
-        const password = (form.elements.namedItem("pwd") as HTMLInputElement).value;
-        const confirmPassword = (form.elements.namedItem("confirmPwd") as HTMLInputElement).value;
+        const email = (form.elements.namedItem("Email") as HTMLInputElement)
+            .value;
+        const pseudo = (form.elements.namedItem("Pseudo") as HTMLInputElement)
+            .value;
+        const password = (form.elements.namedItem("pwd") as HTMLInputElement)
+            .value;
+        const confirmPassword = (
+            form.elements.namedItem("confirmPwd") as HTMLInputElement
+        ).value;
 
         if (!email || !pseudo || !password || !confirmPassword) {
             alert("Tous les champs doivent être remplis.");
@@ -62,7 +67,7 @@ export default function SignUp() {
                 </nav>
                 <div className="max-w-screen-xl w-full">
                     <form onSubmit={handleSubmit}>
-                        <div className="border-2 border-or-300 w-fit rounded-2xl mx-auto p-3">
+                        <div className="border-2 border-or-300 w-fit rounded-2xl mx-auto px-3">
                             <h1 className="text-white text-2xl font-medium py-2 px-36 mt-2">
                                 Sign Up
                             </h1>
